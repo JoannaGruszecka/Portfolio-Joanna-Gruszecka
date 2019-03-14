@@ -1,0 +1,551 @@
+:root {
+    --main-bg-color1: rgb(133, 141, 136);
+    --main-bg-color2: rgb(160, 235, 180);
+    --main-font: 'Work Sans', sans-serif;
+    --font-name-color: rgb(4, 117, 79);
+    --color-charts: rgb(106, 114, 106);
+}
+
+html {
+    font-size: 18px;
+    color: rgb(30, 30, 30);
+}
+
+.container {
+    background-image: linear-gradient(var(--main-bg-color1) 30%, var(--main-bg-color2));
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* TU TWORZYMY HERO */
+
+span {
+    color: var(--font-name-color);
+    font-weight: bold;
+}
+
+div.hero {
+    width: 100%;
+    height: 100vh;
+    border-bottom: 5px solid black;
+    box-sizing: border-box;
+    background-image: url(header1.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: 100% 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    font-family: var(--main-font);
+}
+
+div.hello {
+    background-color: rgba(250, 250, 250, 60%);
+    height: 100%;
+    padding: 20px 0 20px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+div.quote {
+    position: absolute;
+    top: calc(30% - 150px);
+    left: calc(100% - 150px);
+    width: 300px;
+    height: 300px;
+    font-style: italic;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: rgba(250, 250, 250, 60%);
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+div.quote p {
+    font-size: 1rem;
+}
+
+h1 {
+    background-image: linear-gradient(-90deg, var(--main-bg-color2) 30%, transparent);
+    padding: 10px;
+    text-align: right;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+div.nav {
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+div.nav div {
+    background-image: linear-gradient(30deg, var(--main-bg-color2) 30%, transparent);
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 100%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div.nav i {
+    font-size: 40px;
+    color: rgb(40, 40, 40);
+}
+
+
+/* TU TWORZYMY MAIN */
+
+div.main {
+    height: auto;
+    margin: 20px;
+    margin-bottom: 0;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.main div {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+div.main i {
+    padding-right: 10px;
+    font-size: 20px;
+    color: rgb(40, 40, 40);
+}
+
+/* SEKCJA 'O MNIE' */
+
+div.about {
+    margin: 20px 0;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+div.aboutme {
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-gap: 20px;
+}
+
+div.foto {
+    width: auto;
+    height: auto;
+    border: 5px solid rgba(255, 255, 255, 70%);
+    box-sizing: border-box;
+    background-image: url(own.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+div.name {
+    background-color: rgba(255, 255, 255, 60%);
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 20px;
+    box-sizing: border-box;
+    text-align: right; 
+    font-size: 1.2rem;
+    padding-top: 30px;
+}
+
+div.description {
+    background-color: rgba(255, 255, 255, 80%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 90px;
+    text-align: justify;
+}
+
+/* SEKCJA 'UMIEJETNOSCI' */
+
+div.skills {
+    background-color: rgba(255, 255, 255, 40%);
+    margin: 20px 0;
+}
+
+div.urban>div,
+div.frontend>div,
+div.language>div {
+    width: auto;
+    height: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+div.charts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    font-family: var(--main-font);
+}
+
+h4 {
+    border-bottom: 2px solid black;
+}
+
+div.agsk {
+    background-image: linear-gradient(90deg, var(--color-charts) 80%, white 80%);
+}
+
+div.acsk {
+    background-image: linear-gradient(90deg, var(--color-charts) 70%, white 70%);
+}
+
+div.supsk {
+    background-image: linear-gradient(90deg, var(--color-charts) 90%, white 90%);
+}
+
+div.htmlsk {
+    background-image: linear-gradient(90deg, var(--color-charts) 65%, white 65%);
+}
+
+div.csssk {
+    background-image: linear-gradient(90deg, var(--color-charts) 60%, white 60%);
+}
+
+div.jssk {
+    background-image: linear-gradient(90deg, var(--color-charts) 20%, white 20%);
+}
+
+div.angsk {
+    background-image: linear-gradient(90deg, var(--color-charts) 70%, white 70%);
+}
+
+div.niemsk {
+    background-image: linear-gradient(90deg, var(--color-charts) 50%, white 50%);
+}
+
+div.hiszsk {
+    background-image: linear-gradient(90deg, var(--color-charts) 20%, white 20%);
+}
+
+h5 {
+    margin: 10px;
+    color: var(--font-name-color);
+}
+
+/* SEKCJA 'PORTFOLIO' */
+
+div.portfolio {
+    background-color: rgba(255, 255, 255, 30%);
+    margin: 20px 0;
+}
+
+div.projects {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    transition: transform 0.5s ease-in;
+}
+
+div.projects img:hover {
+    border: 5px solid var(--font-name-color);
+    box-sizing: border-box;
+    transform: scale(1.5);
+}
+
+
+/* TU TWORZYMY FOOTER */
+
+div.footer {
+    height: auto;
+    margin: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 2fr;
+}
+
+div.info {
+    background-color: rgba(255, 255, 255, 70%);
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.info p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+div.info p:last-child {
+    font-size: 10px;
+    text-align: right;
+}
+
+div.icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.icons i {
+    margin: 10px;
+    font-size: 30px;
+    color: rgb(40, 40, 40);
+    transition: all 0.3s ease-in-out;
+}
+
+div.icons i:hover {
+    color: black;
+    transform: scale(1.2);
+}
+
+div.contact {
+    background-color: rgba(255, 255, 255, 70%);
+    height: 100%;
+    padding: 20px;
+    border-left: 5px solid rgb(20, 20, 20);
+    border-top: 5px solid rgb(20, 20, 20);
+    box-sizing: border-box;
+}
+
+#contact h3 {
+    background-color: transparent;
+}
+
+div form {
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+div.dane {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+div.message {
+    padding: 10px;
+}
+
+input,
+textarea {
+    background-color: rgb(250, 250, 250);
+    border: 0;
+    border-bottom: 1px solid var(--main-bg-color2);
+    box-sizing: border-box;
+}
+
+/* INNE */
+
+h3 {
+    background-color: var(--main-bg-color2);
+    max-height: 30px;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 15px;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: bold 400;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div.nav a:hover {
+    background-color: var(--main-bg-color2);
+    border-radius: 100%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* MEDIA */
+
+
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 0.9rem;
+    }
+
+    div.nav {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    div.nav div {
+        width: 60px;
+        height: 60px;
+    }
+
+    div.nav i {
+        font-size: 30px;
+    }
+
+    div.quote {
+        width: 250px;
+        height: 250px;
+        top: calc(30% - 125px);
+        left: calc(100% - 125px);
+    }
+
+    div.aboutme {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        }
+
+    div.description {
+        grid-area: 2/1/3/3;
+        border-radius: 0 0 70px 20px;
+    }
+
+    div.name {
+        border-radius: 70px 0 0 0;
+    }
+
+    div.charts {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding: 5px;
+    }
+
+    div.footer {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    div.info {
+        grid-area: 2/1/3/2;
+    }
+
+    div form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    }
+
+    textarea {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    div.aboutme {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        }
+
+    div.foto {
+        grid-area: 1/2/2/3;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 0.7rem;
+    }
+
+    div.quote {
+        width: 200px;
+        height: 200px;
+        top: calc(30% - 100px);
+        left: calc(100% - 100px);
+        }
+
+    div.nav div {
+        width: 40px;
+        height: 40px;
+    }
+
+    div.nav i {
+        font-size: 20px;
+    }
+
+    div.aboutme {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+
+    }
+
+    div.projects img:hover {
+        border: 5px solid var(--main-bg-color1);
+        box-sizing: border-box;
+        transform: scale(1);
+    }
+
+    div.icons i {
+        font-size: 25px;
+    }
+
+    div.contact {
+        padding: 5px;
+    }
+
+    textarea {
+        max-width: 200px;
+        
+    }
+}
+
+
