@@ -169,7 +169,7 @@ div.foto {
     height: auto;
     border: 5px solid rgba(255, 255, 255, 70%);
     box-sizing: border-box;
-    background-image: url(own.jpg);
+    background-image: url(foto/own.JPG);
     background-size: cover;
     background-position: 50% 50%;
 }
